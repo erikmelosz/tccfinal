@@ -20,7 +20,7 @@ body {
 
 .top-bar {
     background-color: #bb9695;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 15px;
     font-size: 1.1em;
@@ -31,7 +31,7 @@ body {
 }
 
 .top-bar a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -66,7 +66,7 @@ body {
     color: #ffffff;
 }
 
-.hero-text button {
+.btn {
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #bb9695;
@@ -114,19 +114,33 @@ body {
     transition: transform 0.5s ease;
     border-collapse: collapse;
 }
+
+
 .card:hover{
     transform: scale(1.05);
 }
 
 .card h3 {
     font-size: 22px;
-    color: #c2ac70;
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
 .card p {
     font-size: 16px;
     color: #ffffff;
+}
+.img-logo{
+    max-width:64px;
+    max-height: 64px;
+}
+.responsive-img {
+    width: 100%;
+    height: 250px;
+    max-width: 300px; 
+    max-height: 900px; 
+    object-fit: cover; 
+    border-radius: 10px;/* Ensures the image covers the area without stretching */
 }
 
 
@@ -135,18 +149,28 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 300px;
-    margin: 10px;
-    font-family: Arial, sans-serif;
-    
+    width: 250px;        
+    margin: 50px;
+    font-family: Arial, sans-serif;    
 }
 
+.card-space {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+}
 /* Image inside the card */
 .card img {
-    width: 100%;
-    height: auto;
+    width: 100%;     
     display: block;
+    object-fit: cover; /* Prevent distortion, keep image proportional */
+    border-bottom: 1px solid #ddd; /* Adds separation between image and text */
 }
+
 
 /* Container for the text content */
 .card-content {
@@ -177,7 +201,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 .espaco{
@@ -290,7 +314,7 @@ overflow: hidden;
 
 h1 {
     text-align: center;
-    color: #917e4e;
+    color: #c2ac70;
     height: auto;
 }
 

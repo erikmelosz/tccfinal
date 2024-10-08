@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide Profissional</title>
+  <link rel="stylesheet" href="slide.css">
+</head>
+<body>
+  <div class="slide-container">
+    <div class="slide active">
+      <h1>Slide 1</h1>
+     <img src="images/carrousel2.png" alt="">
+    </div>
+    <div class="slide">
+      <h1>Slide 2</h1>
+      <img src="images/carrousel3.png" alt="">
+    </div>
+    <div class="slide">
+      <h1>Slide 3</h1>
+     <img src="images/carrousel 1.jpg" alt="">
+    </div>
+
+    <button class="arrow prev" onclick="prevSlide()">&#10094;</button>
+    <button class="arrow next" onclick="nextSlide()">&#10095;</button>
+
+    <div class="navigation">
+      <div class="dot active" onclick="currentSlide(1)"></div>
+      <div class="dot" onclick="currentSlide(2)"></div>
+      <div class="dot" onclick="currentSlide(3)"></div>
+    </div>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlide(slideIndex);
+
+    function nextSlide() {
+      showSlide(slideIndex += 1);
+    }
+
+    function prevSlide() {
+      showSlide(slideIndex -= 1);
+    }
+
+    function currentSlide(n) {
+      showSlide(slideIndex = n);
+    }
+
+    function showSlide(n) {
+      let slides = document.querySelectorAll('.slide');
+      let dots = document.querySelectorAll('.dot');
+      
+      if (n > slides.length) { slideIndex = 1; }
+      if (n < 1) { slideIndex = slides.length; }
+      
+      slides.forEach(slide => slide.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+      
+      slides[slideIndex - 1].classList.add('active');
+      dots[slideIndex - 1].classList.add('active');
+    }
+  </script>
+</body>
+</html>
