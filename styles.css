@@ -29,6 +29,7 @@ body {
   .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    flex-direction: row;
   }
   
   .slide {
@@ -71,7 +72,8 @@ body {
   /* Dots/Indicators */
   .dots {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 10px;    
+    display: flex;
   }
   
   .dot {
@@ -102,7 +104,7 @@ body {
 
 .top-bar {
     background-color: #bb9695;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 15px;
     font-size: 1.1em;
@@ -113,7 +115,7 @@ body {
 }
 
 .top-bar a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -128,6 +130,7 @@ body {
 .hero {
     display: flex;
     justify-content: space-between;
+    flex-flow: column;
     align-items: center;
     padding: 50px 0;
     background-color: #DDBEBD;
@@ -148,7 +151,7 @@ body {
     color: #ffffff;
 }
 
-.hero-text button {
+.btn {
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #bb9695;
@@ -195,13 +198,25 @@ body {
 
 .card h3 {
     font-size: 22px;
-    color: #c2ac70;
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
 .card p {
     font-size: 16px;
     color: #ffffff;
+}
+.img-logo{
+    max-width:64px;
+    max-height: 64px;
+}
+.responsive-img {
+    width: 100%;
+    height: 250px;
+    max-width: 300px; 
+    max-height: 900px; 
+    object-fit: cover; 
+    border-radius: 10px;/* Ensures the image covers the area without stretching */
 }
 
 .responsive-img {
@@ -298,22 +313,19 @@ footer {
     height: 50px;    
     display: flex;        
 }
-
+/* ISSO 'E O FLEXBOX */
 .menu-top-bar {
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-    margin: 0 auto;
+    display: flex;    
+    margin: 0 auto; /* aqui vc muda a posicao do menu */
 }
 .flex-menu {
     display: flex;
-    flex-flow: row wrap;
-    
+    flex-flow: row wrap;    
 }
 
 .flex-item-menu {
     padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 5px; /* aqui vc muda o espaco entre os menus*/
     align-self: center;
 }
 .footer-section ul {
@@ -405,7 +417,7 @@ overflow: hidden;
 
 h1 {
     text-align: center;
-    color: #917e4e;
+    color: #c2ac70;
     height: auto;
 }
 
