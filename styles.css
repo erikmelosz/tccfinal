@@ -143,6 +143,14 @@ body {
     border-radius: 10px;/* Ensures the image covers the area without stretching */
 }
 
+.responsive-img {
+    width: 100%;
+    height: 250px;
+    max-width: 300px; 
+    max-height: 900px; 
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
 
 .card-image {
     border: 1px solid #ddd;
@@ -224,7 +232,26 @@ footer {
 .footer-section p, .footer-section ul, .footer-section li {
     margin: 5px 0;
 }
+.logo {
+    width: 50px;
+    height: 50px;    
+    display: flex;        
+}
+/* ISSO 'E O FLEXBOX */
+.menu-top-bar {
+    display: flex;    
+    margin: 0 auto; /* aqui vc muda a posicao do menu */
+}
+.flex-menu {
+    display: flex;
+    flex-flow: row wrap;    
+}
 
+.flex-item-menu {
+    padding-left: 5px;
+    padding-right: 5px; /* aqui vc muda o espaco entre os menus*/
+    align-self: center;
+}
 .footer-section ul {
     list-style: none;
     padding: 0;
