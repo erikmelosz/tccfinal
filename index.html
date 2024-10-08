@@ -21,50 +21,39 @@
                 </div>
             </div>
         </nav>
-    </div><br><br>
+    </div>
 
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-                  <div class="slider">
-        <div class="slides">
-            <!--Radio Buttons-->
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <!--Fim Radio Buttons-->
-    
-            <!--Slide images-->
-            <div class="slide first">
-                <img src="images/carrousel1.png">
+    <section class="hero">        
+        <div class="slider">
+            <div class="slides">
+                <!-- Slide 1 -->
+                <div class="slide">
+                <img src="https://via.placeholder.com/800x400/ff7f7f/333333?text=Slide+1" alt="Slide 1">
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                <img src="https://via.placeholder.com/800x400/7fff7f/333333?text=Slide+2" alt="Slide 2">
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                <img src="https://via.placeholder.com/800x400/7f7fff/333333?text=Slide+3" alt="Slide 3">
+                </div>
             </div>
-            <div class="slide">
-                <img src="images/carrousel2.png">
-            </div>
-            <div class="slide">
-                <img src="images/Untitled (11).png">
-            </div>
-            <!--Fim slide images-->
-    
-            <!--Nav auto-->
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-            </div>
-    
-        </div>
-        <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-        </div>
-    </div><br><br>
-    <div class="hero-text">
-        <button>Agendar Consulta</button></div>
             
+            <!-- Navigation Buttons -->
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+            </div>
+
+            <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
+    
     </section>
   
 
@@ -266,6 +255,6 @@
             <p>© 2024 Todos os Direitos Reservados | Políticas de Privacidade</p>
         </div>
     </footer>
-
 </body>
+<script src="script.js"></script>
 </html>
